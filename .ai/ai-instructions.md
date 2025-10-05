@@ -365,6 +365,35 @@ When adding new features:
 
 ## 🔄 Version Control
 
+### Branch Workflow (CRITICAL)
+
+**ALWAYS create a feature branch before starting ANY work** - this applies to features, bugfixes, and even small changes.
+
+```bash
+# For new features
+git checkout -b feat/mobile-navigation
+git checkout -b feat/form-validation
+git checkout -b feat/smooth-scrolling
+
+# For bugfixes
+git checkout -b bugfix/asset-404-error
+git checkout -b bugfix/menu-close-issue
+git checkout -b bugfix/link-population
+```
+
+**Workflow**:
+1. ✅ **AI creates branch automatically** before starting work
+2. ✅ Make all changes and commit to feature branch
+3. ✅ **User merges to `main` manually** after review
+
+**Branch naming convention**:
+- `feat/[descriptive-feature-name]` - For new functionality
+- `bugfix/[descriptive-bug-name]` - For bug fixes
+
+**Never work directly on `main` branch.** All development happens on feature branches.
+
+---
+
 ### Commit Message Format
 ```
 feat: Add mobile navigation menu

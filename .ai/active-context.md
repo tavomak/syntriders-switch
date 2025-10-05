@@ -1,6 +1,6 @@
 # Active Context - What I'm Working On NOW
 
-**Last Updated**: October 5, 2025 (Session 2)  
+**Last Updated**: October 5, 2025 at 03:04 UTC (Session 3)  
 **Current Phase**: Landing Page Implementation + Documentation  
 **Status**: 🟢 Active Development
 
@@ -13,6 +13,13 @@ Replace the legacy landing page with a new **mobile-first Synth Riders Overdrive
 ---
 
 ## ✅ Recent Changes (Last 24 Hours)
+
+### Session 3: Git Branching Workflow Documentation (Oct 5, 2025 - 03:04 UTC)
+- ✅ Added **critical Git branching workflow rule** to `.ai/ai-instructions.md`
+- ✅ Updated **branch naming conventions** in `.ai/coding-standards.md`
+- ✅ Documented workflow: AI auto-creates feature branches (`feat/` or `bugfix/`)
+- ✅ Clarified that user handles merging to `main` manually
+- ✅ Applied to all changes (features, bugfixes, even small tweaks)
 
 ### Session 2: Documentation Optimization (Oct 5, 2025)
 - ✅ Created hybrid `.ai/` folder structure (optimal for AI + humans)
