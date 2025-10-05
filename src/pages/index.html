@@ -56,30 +56,40 @@
     <!-- Main Content -->
     <main class="min-h-screen">
       
-      <!-- Hero Section with Overlay -->
+      <!-- Hero Section with Image and Floating Elements -->
       <section 
         id="hero" 
-        class="relative w-full h-screen bg-[url('/src/assets/images/primary_banner.jpg')] bg-cover bg-center bg-no-repeat"
+        class="relative w-full"
         role="banner"
         aria-label="Synth Riders Overdrive hero section"
       >
-        <!-- Dark overlay for better contrast -->
-        <div class="absolute inset-0 bg-black/40"></div>
+        <!-- Hero Image -->
+        <img 
+          src="/src/assets/images/primary_banner.jpg" 
+          alt="Synth Riders on Nintendo Switch" 
+          class="w-full h-auto block"
+          loading="eager"
+        />
         
-        <!-- Hero Content Overlay -->
-        <div class="relative z-10 flex flex-col items-center justify-center h-full px-6 py-8">
-          <!-- Logo -->
-          <div class="mb-8 motion-safe:animate-fade-in">
-            <img 
-              src="/src/assets/images/synthriders_logo.svg" 
-              alt="Synth Riders Overdrive" 
-              class="w-40 sm:w-52 md:w-64 h-auto drop-shadow-2xl"
-              loading="eager"
-              tabindex="0"
-            />
-          </div>
+        <!-- Dark overlay for better contrast -->
+        <div class="absolute inset-0 bg-black/30"></div>
+        
+        <!-- Bottom gradient overlay to blend with black background -->
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/80"></div>
+        
+        <!-- Floating Logo at Top -->
+        <div class="absolute top-6 left-0 right-0 z-20 flex justify-center motion-safe:animate-fade-in">
+          <img 
+            src="/src/assets/images/synthriders_logo.svg" 
+            alt="Synth Riders Overdrive" 
+            class="w-40 sm:w-52 md:w-64 h-auto drop-shadow-2xl"
+            loading="eager"
+            tabindex="0"
+          />
+        </div>
 
-          <!-- Social Action Buttons -->
+        <!-- Floating Social Action Buttons at Bottom -->
+        <div class="absolute bottom-6 left-0 right-0 z-20 flex justify-center">
           <div class="grid grid-cols-2 gap-4 max-w-sm sm:max-w-md motion-safe:animate-fade-in-up motion-safe:animation-delay-300">
             <!-- Discord Button -->
             <a 
