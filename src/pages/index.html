@@ -15,7 +15,10 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://yourdomain.com/" />
-    <meta property="og:title" content="Synth Riders Overdrive | Nintendo Switch" />
+    <meta
+      property="og:title"
+      content="Synth Riders Overdrive | Nintendo Switch"
+    />
     <meta
       property="og:description"
       content="An action-packed cyberpunk rhythm game for Nintendo Switch"
@@ -25,7 +28,10 @@
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://yourdomain.com/" />
-    <meta property="twitter:title" content="Synth Riders Overdrive | Nintendo Switch" />
+    <meta
+      property="twitter:title"
+      content="Synth Riders Overdrive | Nintendo Switch"
+    />
     <meta
       property="twitter:description"
       content="An action-packed cyberpunk rhythm game for Nintendo Switch"
@@ -39,54 +45,103 @@
     <link rel="canonical" href="https://yourdomain.com/" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/android-icon-192x192.png"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
 
     <!-- Preconnect to external domains for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    
+
     <!-- Google Fonts - Teko -->
-    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Styles -->
     <link rel="stylesheet" href="/src/styles/main.css" />
   </head>
-  <body class="antialiased bg-synth-black text-synth-white font-sans overflow-x-hidden">
-    
+  <body
+    class="antialiased bg-synth-black text-synth-white font-sans overflow-x-hidden"
+  >
     <!-- Main Content -->
     <main class="min-h-screen">
-      
       <!-- Hero Section with Image and Floating Elements -->
-      <section 
-        id="hero" 
+      <section
+        id="hero"
         class="relative w-full"
         role="banner"
         aria-label="Synth Riders Overdrive hero section"
       >
         <!-- Hero Image - Responsive -->
         <!-- Mobile Image -->
-        <img 
-          src="/src/assets/images/primary_banner_mobile.png" 
-          alt="Synth Riders on Nintendo Switch" 
+        <img
+          src="/src/assets/images/primary_banner_mobile.png"
+          alt="Synth Riders on Nintendo Switch"
           class="w-full h-auto block md:hidden"
           loading="eager"
         />
         <!-- Desktop Image -->
-        <img 
-          src="/src/assets/images/primary_banner.jpg" 
-          alt="Synth Riders on Nintendo Switch" 
-          class="w-full h-auto hidden md:block"
-          loading="eager"
-        />
-        
+        <div class="w-full h-screen hidden md:block overflow-hidden">
+          <img
+            src="/src/assets/images/primary_banner.jpg"
+            alt="Synth Riders on Nintendo Switch"
+            class="w-full h-screen object-cover object-bottom"
+            loading="eager"
+          />
+        </div>
         <!-- Improved gradient overlay: transparent top 50%, smooth transition to black bottom -->
-        <div class="absolute inset-0 bg-gradient-to-b from-transparent from-70% to-black"></div>
-        
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-transparent from-70% to-black"
+        ></div>
+
         <!-- Floating Logo at Top -->
-        <div class="absolute top-6 left-0 right-0 z-20 flex justify-center motion-safe:animate-fade-in">
-          <img 
-            src="/src/assets/images/synthriders_logo.svg" 
-            alt="Synth Riders Overdrive" 
+        <div
+          class="absolute top-6 left-0 right-0 z-20 flex justify-center motion-safe:animate-fade-in"
+        >
+          <img
+            src="/src/assets/images/synthriders_logo.svg"
+            alt="Synth Riders Overdrive"
             class="w-40 sm:w-52 md:w-64 h-auto drop-shadow-2xl"
             loading="eager"
             tabindex="0"
@@ -96,130 +151,184 @@
         <!-- Floating Social Action Buttons at Bottom (Desktop Only) -->
         <div class="hidden md:block absolute bottom-6 left-0 right-0 z-20">
           <div class="container mx-auto max-w-4xl py-10">
-            <div class="grid grid-cols-4 gap-8 px-6 motion-safe:animate-fade-in-up motion-safe:animation-delay-300">
-            <!-- Discord Button -->
-            <a 
-              href="#" 
-              target="_blank"
-              rel="noopener noreferrer"
-              class="group flex items-center gap-3 bg-black/80 hover:bg-[#5865F2] backdrop-blur-sm text-white font-semibold py-4 px-6 rounded-xl transition-all duration-300 border-2 border-synth-pink/80 hover:border-[#5865F2] hover:scale-105 hover:shadow-[0_0_20px_rgba(88,101,242,0.5)] motion-safe:animate-fade-in-up motion-safe:animation-delay-500 h-20 min-h-20"
-              data-social-link="discord"
-              aria-label="Join our Discord community"
+            <div
+              class="grid grid-cols-4 gap-8 px-6 motion-safe:animate-fade-in-up motion-safe:animation-delay-300"
             >
-              <img src="/src/assets/icons/discord_icon.svg" alt="" class="w-6 h-6 flex-shrink-0 group-hover:scale-110 transition-transform duration-200" />
-              <span class="text-sm md:text-lg uppercase tracking-wide font-bold leading-tight text-left font-heading">
-                JOIN<br/>THE DISCORD
-              </span>
-            </a>
+              <!-- Discord Button -->
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="group flex items-center gap-3 bg-black/80 hover:bg-[#5865F2] backdrop-blur-sm text-white font-semibold py-4 px-6 rounded-xl transition-all duration-300 border-2 border-synth-pink/80 hover:border-[#5865F2] hover:scale-105 hover:shadow-[0_0_20px_rgba(88,101,242,0.5)] motion-safe:animate-fade-in-up motion-safe:animation-delay-500 h-20 min-h-20"
+                data-social-link="discord"
+                aria-label="Join our Discord community"
+              >
+                <img
+                  src="/src/assets/icons/discord_icon.svg"
+                  alt=""
+                  class="w-6 h-6 flex-shrink-0 group-hover:scale-110 transition-transform duration-200"
+                />
+                <span
+                  class="text-sm md:text-lg uppercase tracking-wide font-bold leading-tight text-left font-heading"
+                >
+                  JOIN<br />THE DISCORD
+                </span>
+              </a>
 
-            <!-- Press Kit Button -->
-            <a 
-              href="#" 
-              target="_blank"
-              rel="noopener noreferrer"
-              class="group flex items-center gap-3 bg-black/80 hover:bg-synth-pink backdrop-blur-sm text-white font-semibold py-4 px-6 rounded-xl transition-all duration-300 border-2 border-synth-pink/80 hover:border-synth-pink hover:scale-105 hover:shadow-[0_0_20px_rgba(254,30,105,0.5)] motion-safe:animate-fade-in-up motion-safe:animation-delay-600 h-20 min-h-20"
-              data-social-link="presskit"
-              aria-label="Download press kit"
-            >
-              <img src="/src/assets/icons/press_kit_icon.svg" alt="" class="w-6 h-6 flex-shrink-0 group-hover:scale-110 transition-transform duration-200" />
-              <span class="text-sm md:text-lg uppercase tracking-wide font-bold text-left font-heading">
-                PRESS KIT
-              </span>
-            </a>
+              <!-- Press Kit Button -->
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="group flex items-center gap-3 bg-black/80 hover:bg-synth-pink backdrop-blur-sm text-white font-semibold py-4 px-6 rounded-xl transition-all duration-300 border-2 border-synth-pink/80 hover:border-synth-pink hover:scale-105 hover:shadow-[0_0_20px_rgba(254,30,105,0.5)] motion-safe:animate-fade-in-up motion-safe:animation-delay-600 h-20 min-h-20"
+                data-social-link="presskit"
+                aria-label="Download press kit"
+              >
+                <img
+                  src="/src/assets/icons/press_kit_icon.svg"
+                  alt=""
+                  class="w-6 h-6 flex-shrink-0 group-hover:scale-110 transition-transform duration-200"
+                />
+                <span
+                  class="text-sm md:text-lg uppercase tracking-wide font-bold text-left font-heading"
+                >
+                  PRESS KIT
+                </span>
+              </a>
 
-            <!-- TikTok Button -->
-            <a 
-              href="#" 
-              target="_blank"
-              rel="noopener noreferrer"
-              class="group flex items-center gap-3 bg-black/80 hover:bg-black backdrop-blur-sm text-white font-semibold py-4 px-6 rounded-xl transition-all duration-300 border-2 border-synth-pink/80 hover:border-white hover:scale-105 hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] motion-safe:animate-fade-in-up motion-safe:animation-delay-700 h-20 min-h-20"
-              data-social-link="tiktok"
-              aria-label="Follow us on TikTok"
-            >
-              <img src="/src/assets/icons/tiktok_icon.svg" alt="" class="w-6 h-6 flex-shrink-0 group-hover:scale-110 transition-transform duration-200" />
-              <span class="text-sm md:text-lg uppercase tracking-wide font-bold text-left font-heading">
-                TIKTOK
-              </span>
-            </a>
+              <!-- TikTok Button -->
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="group flex items-center gap-3 bg-black/80 hover:bg-black backdrop-blur-sm text-white font-semibold py-4 px-6 rounded-xl transition-all duration-300 border-2 border-synth-pink/80 hover:border-white hover:scale-105 hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] motion-safe:animate-fade-in-up motion-safe:animation-delay-700 h-20 min-h-20"
+                data-social-link="tiktok"
+                aria-label="Follow us on TikTok"
+              >
+                <img
+                  src="/src/assets/icons/tiktok_icon.svg"
+                  alt=""
+                  class="w-6 h-6 flex-shrink-0 group-hover:scale-110 transition-transform duration-200"
+                />
+                <span
+                  class="text-sm md:text-lg uppercase tracking-wide font-bold text-left font-heading"
+                >
+                  TIKTOK
+                </span>
+              </a>
 
-            <!-- YouTube Button -->
-            <a 
-              href="#" 
-              target="_blank"
-              rel="noopener noreferrer"
-              class="group flex items-center gap-3 bg-black/80 hover:bg-[#FF0000] backdrop-blur-sm text-white font-semibold py-4 px-6 rounded-xl transition-all duration-300 border-2 border-synth-pink/80 hover:border-[#FF0000] hover:scale-105 hover:shadow-[0_0_20px_rgba(255,0,0,0.5)] motion-safe:animate-fade-in-up motion-safe:animation-delay-800 h-20 min-h-20"
-              data-social-link="youtube"
-              aria-label="Subscribe to our YouTube channel"
-            >
-              <img src="/src/assets/icons/youtube_icon.svg" alt="" class="w-6 h-6 flex-shrink-0 group-hover:scale-110 transition-transform duration-200" />
-              <span class="text-sm md:text-lg uppercase tracking-wide font-bold text-left font-heading">
-                YOUTUBE
-              </span>
-            </a>
+              <!-- YouTube Button -->
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="group flex items-center gap-3 bg-black/80 hover:bg-[#FF0000] backdrop-blur-sm text-white font-semibold py-4 px-6 rounded-xl transition-all duration-300 border-2 border-synth-pink/80 hover:border-[#FF0000] hover:scale-105 hover:shadow-[0_0_20px_rgba(255,0,0,0.5)] motion-safe:animate-fade-in-up motion-safe:animation-delay-800 h-20 min-h-20"
+                data-social-link="youtube"
+                aria-label="Subscribe to our YouTube channel"
+              >
+                <img
+                  src="/src/assets/icons/youtube_icon.svg"
+                  alt=""
+                  class="w-6 h-6 flex-shrink-0 group-hover:scale-110 transition-transform duration-200"
+                />
+                <span
+                  class="text-sm md:text-lg uppercase tracking-wide font-bold text-left font-heading"
+                >
+                  YOUTUBE
+                </span>
+              </a>
             </div>
           </div>
         </div>
       </section>
 
       <!-- Mobile Social Action Buttons (Under Hero Image) -->
-      <section class="md:hidden container mx-auto max-w-4xl py-10 scroll-reveal">
-        <div class="grid grid-cols-2 gap-4 px-2 motion-safe:animate-fade-in-up motion-safe:animation-delay-300">
+      <section
+        class="md:hidden container mx-auto max-w-4xl py-10 scroll-reveal"
+      >
+        <div
+          class="grid grid-cols-2 gap-4 px-2 motion-safe:animate-fade-in-up motion-safe:animation-delay-300"
+        >
           <!-- Discord Button -->
-          <a 
-            href="#" 
+          <a
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             class="group flex items-center gap-3 bg-black/80 hover:bg-[#5865F2] backdrop-blur-sm text-white font-semibold py-4 px-6 rounded-xl transition-all duration-300 border-2 border-synth-pink/80 hover:border-[#5865F2] hover:scale-105 hover:shadow-[0_0_20px_rgba(88,101,242,0.5)] motion-safe:animate-fade-in-up motion-safe:animation-delay-500 h-20 min-h-20"
             data-social-link="discord"
             aria-label="Join our Discord community"
           >
-            <img src="/src/assets/icons/discord_icon.svg" alt="" class="w-6 h-6 flex-shrink-0 group-hover:scale-110 transition-transform duration-200" />
-            <span class="text-sm uppercase tracking-wide font-bold leading-tight text-left font-heading">
-              JOIN<br/>THE DISCORD
+            <img
+              src="/src/assets/icons/discord_icon.svg"
+              alt=""
+              class="w-6 h-6 flex-shrink-0 group-hover:scale-110 transition-transform duration-200"
+            />
+            <span
+              class="text-sm uppercase tracking-wide font-bold leading-tight text-left font-heading"
+            >
+              JOIN<br />THE DISCORD
             </span>
           </a>
 
           <!-- Press Kit Button -->
-          <a 
-            href="#" 
+          <a
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             class="group flex items-center gap-3 bg-black/80 hover:bg-synth-pink backdrop-blur-sm text-white font-semibold py-4 px-6 rounded-xl transition-all duration-300 border-2 border-synth-pink/80 hover:border-synth-pink hover:scale-105 hover:shadow-[0_0_20px_rgba(254,30,105,0.5)] motion-safe:animate-fade-in-up motion-safe:animation-delay-600 h-20 min-h-20"
             data-social-link="presskit"
             aria-label="Download press kit"
           >
-            <img src="/src/assets/icons/press_kit_icon.svg" alt="" class="w-6 h-6 flex-shrink-0 group-hover:scale-110 transition-transform duration-200" />
-            <span class="text-base sm:text-lg uppercase tracking-wide font-bold text-left font-heading">
+            <img
+              src="/src/assets/icons/press_kit_icon.svg"
+              alt=""
+              class="w-6 h-6 flex-shrink-0 group-hover:scale-110 transition-transform duration-200"
+            />
+            <span
+              class="text-base sm:text-lg uppercase tracking-wide font-bold text-left font-heading"
+            >
               PRESS KIT
             </span>
           </a>
 
           <!-- TikTok Button -->
-          <a 
-            href="#" 
+          <a
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             class="group flex items-center gap-3 bg-black/80 hover:bg-black backdrop-blur-sm text-white font-semibold py-4 px-6 rounded-xl transition-all duration-300 border-2 border-synth-pink/80 hover:border-white hover:scale-105 hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] motion-safe:animate-fade-in-up motion-safe:animation-delay-700 h-20 min-h-20"
             data-social-link="tiktok"
             aria-label="Follow us on TikTok"
           >
-            <img src="/src/assets/icons/tiktok_icon.svg" alt="" class="w-6 h-6 flex-shrink-0 group-hover:scale-110 transition-transform duration-200" />
-            <span class="text-base sm:text-lg uppercase tracking-wide font-bold text-left font-heading">
+            <img
+              src="/src/assets/icons/tiktok_icon.svg"
+              alt=""
+              class="w-6 h-6 flex-shrink-0 group-hover:scale-110 transition-transform duration-200"
+            />
+            <span
+              class="text-base sm:text-lg uppercase tracking-wide font-bold text-left font-heading"
+            >
               TIKTOK
             </span>
           </a>
 
           <!-- YouTube Button -->
-          <a 
-            href="#" 
+          <a
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             class="group flex items-center gap-3 bg-black/80 hover:bg-[#FF0000] backdrop-blur-sm text-white font-semibold py-4 px-6 rounded-xl transition-all duration-300 border-2 border-synth-pink/80 hover:border-[#FF0000] hover:scale-105 hover:shadow-[0_0_20px_rgba(255,0,0,0.5)] motion-safe:animate-fade-in-up motion-safe:animation-delay-800 h-20 min-h-20"
             data-social-link="youtube"
             aria-label="Subscribe to our YouTube channel"
           >
-            <img src="/src/assets/icons/youtube_icon.svg" alt="" class="w-6 h-6 flex-shrink-0 group-hover:scale-110 transition-transform duration-200" />
-            <span class="text-base sm:text-lg uppercase tracking-wide font-bold text-left font-heading">
+            <img
+              src="/src/assets/icons/youtube_icon.svg"
+              alt=""
+              class="w-6 h-6 flex-shrink-0 group-hover:scale-110 transition-transform duration-200"
+            />
+            <span
+              class="text-base sm:text-lg uppercase tracking-wide font-bold text-left font-heading"
+            >
               YOUTUBE
             </span>
           </a>
@@ -228,20 +337,22 @@
 
       <!-- Title Section -->
       <section class="container mx-auto max-w-4xl py-10 scroll-reveal">
-        <h1 class="text-2xl md:text-3xl lg:text-[56px] font-heading font-bold text-synth-pink uppercase leading-tight tracking-wide px-6">
-          An Action-Packed Cyberpunk<br/>Rhythm Game
+        <h1
+          class="text-2xl md:text-3xl lg:text-[56px] font-heading font-bold text-synth-pink uppercase leading-tight tracking-wide px-6"
+        >
+          An Action-Packed Cyberpunk<br />Rhythm Game
         </h1>
       </section>
 
       <!-- Description Section 1 -->
       <section class="container mx-auto max-w-4xl py-10 scroll-reveal">
         <div class="px-6">
-
           <p class="text-lg md:text-[32px] leading-relaxed font-heading">
-            <b>
-              Become a Synth Rider in a futuristic world -
-            </b>
-            Experience a high-octane Cyberpunk musical adventure where you catch notes, weave through obstacles, and ride neon rails in perfect sync with the beat. Grab your hoverboard and perform epic air stunts in retro futuristic cityscapes!
+            <b> Become a Synth Rider in a futuristic world - </b>
+            Experience a high-octane Cyberpunk musical adventure where you catch
+            notes, weave through obstacles, and ride neon rails in perfect sync
+            with the beat. Grab your hoverboard and perform epic air stunts in
+            retro futuristic cityscapes!
           </p>
         </div>
       </section>
@@ -250,10 +361,13 @@
       <section class="container mx-auto max-w-4xl py-10 scroll-reveal">
         <div class="px-6">
           <p class="text-lg md:text-[32px] leading-relaxed font-heading">
-            <b>
-              Multiplayer musical mayhem:
-            </b>
-            Up to <strong>FOUR PLAYERS</strong> can throw down in <strong>VERSUS</strong> or jump into a <strong>COUCH CO-OP</strong> mode where all players must work together and share the beat! Whether you're score chasing or rhythm riding as a group, all skill levels are welcome in Synth Riders Overdrive.
+            <b> Multiplayer musical mayhem: </b>
+            Up to <strong>FOUR PLAYERS</strong> can throw down in
+            <strong>VERSUS</strong> or jump into a
+            <strong>COUCH CO-OP</strong> mode where all players must work
+            together and share the beat! Whether you're score chasing or rhythm
+            riding as a group, all skill levels are welcome in Synth Riders
+            Overdrive.
           </p>
         </div>
       </section>
@@ -261,91 +375,286 @@
       <!-- Music Library Section -->
       <section class="container mx-auto max-w-4xl py-10 scroll-reveal">
         <div class="px-6">
-        <h2 class="text-2xl md:text-3xl lg:text-[56px] font-heading font-bold text-synth-pink uppercase mb-6">
-          Broad Library of Music
-        </h2>
-        <p class="text-lg md:text-[32px] leading-relaxed mb-8 font-heading">
-          Up to 64 electrifying tracks,* from synthwave—the genre that inspired the game's VR origins—to '80s anthems and today's hits. Starting with its synthwave roots, the soundtrack has expanded to feature songs from amazing artists including:
-        </p>
+          <h2
+            class="text-2xl md:text-3xl lg:text-[56px] font-heading font-bold text-synth-pink uppercase mb-6"
+          >
+            Broad Library of Music
+          </h2>
+          <p class="text-lg md:text-[32px] leading-relaxed mb-8 font-heading">
+            Up to 64 electrifying tracks,* from synthwave—the genre that
+            inspired the game's VR origins—to '80s anthems and today's hits.
+            Starting with its synthwave roots, the soundtrack has expanded to
+            feature songs from amazing artists including:
+          </p>
 
-        <!-- Artist Logos Grid -->
-        <div class="grid grid-cols-3 md:grid-cols-6 gap-6 items-center justify-items-center mb-8" data-artist-logos="true">
-          <img src="/src/assets/images/wham_logo.png" alt="WHAM!" class="w-full max-w-[120px] h-auto scroll-reveal-logo" />
-          <img src="/src/assets/images/queen_logo.png" alt="Queen" class="w-full max-w-[120px] h-auto scroll-reveal-logo" />
-          <img src="/src/assets/images/charli_xcx_logo.png" alt="Charli XCX" class="w-full max-w-[120px] h-auto scroll-reveal-logo" />
-          
-          <img src="/src/assets/images/david_guetta_logo.png" alt="David Guetta" class="w-full max-w-[120px] h-auto scroll-reveal-logo" />
-          <img src="/src/assets/images/one_republic_logo.png" alt="OneRepublic" class="w-full max-w-[120px] h-auto scroll-reveal-logo" />
-          <img src="/src/assets/images/dance_with_the_dead_logo.png" alt="Dance with the Dead" class="w-full max-w-[120px] h-auto scroll-reveal-logo" />
-          
-          <img src="/src/assets/images/tokio_machine_logo.png" alt="Tokyo Machine" class="w-full max-w-[120px] h-auto scroll-reveal-logo" />
-          <img src="/src/assets/images/jack_harlow_logo.png" alt="Jack Harlow" class="w-full max-w-[120px] h-auto scroll-reveal-logo" />
-          <img src="/src/assets/images/sia_logo.png" alt="Sia" class="w-full max-w-[120px] h-auto scroll-reveal-logo" />
-          
-          <img src="/src/assets/images/dance_with_the_dead_logo.png" alt="Dance with the Dead" class="w-full max-w-[120px] h-auto scroll-reveal-logo" />
-          <img src="/src/assets/images/artemas_logo.png" alt="Artemas" class="w-full max-w-[120px] h-auto scroll-reveal-logo" />
-          <img src="/src/assets/images/the_midnight_logo.png" alt="The Midnight" class="w-full max-w-[120px] h-auto scroll-reveal-logo" />
-        </div>
+          <!-- Artist Logos Grid -->
+          <div
+            class="grid grid-cols-3 md:grid-cols-6 gap-6 items-center justify-items-center mb-8"
+            data-artist-logos="true"
+          >
+            <img
+              src="/src/assets/images/wham_logo.png"
+              alt="WHAM!"
+              class="w-full max-w-[120px] h-auto scroll-reveal-logo"
+            />
+            <img
+              src="/src/assets/images/queen_logo.png"
+              alt="Queen"
+              class="w-full max-w-[120px] h-auto scroll-reveal-logo"
+            />
+            <img
+              src="/src/assets/images/charli_xcx_logo.png"
+              alt="Charli XCX"
+              class="w-full max-w-[120px] h-auto scroll-reveal-logo"
+            />
+
+            <img
+              src="/src/assets/images/david_guetta_logo.png"
+              alt="David Guetta"
+              class="w-full max-w-[120px] h-auto scroll-reveal-logo"
+            />
+            <img
+              src="/src/assets/images/one_republic_logo.png"
+              alt="OneRepublic"
+              class="w-full max-w-[120px] h-auto scroll-reveal-logo"
+            />
+            <img
+              src="/src/assets/images/dance_with_the_dead_logo.png"
+              alt="Dance with the Dead"
+              class="w-full max-w-[120px] h-auto scroll-reveal-logo"
+            />
+
+            <img
+              src="/src/assets/images/tokio_machine_logo.png"
+              alt="Tokyo Machine"
+              class="w-full max-w-[120px] h-auto scroll-reveal-logo"
+            />
+            <img
+              src="/src/assets/images/jack_harlow_logo.png"
+              alt="Jack Harlow"
+              class="w-full max-w-[120px] h-auto scroll-reveal-logo"
+            />
+            <img
+              src="/src/assets/images/sia_logo.png"
+              alt="Sia"
+              class="w-full max-w-[120px] h-auto scroll-reveal-logo"
+            />
+
+            <img
+              src="/src/assets/images/dance_with_the_dead_logo.png"
+              alt="Dance with the Dead"
+              class="w-full max-w-[120px] h-auto scroll-reveal-logo"
+            />
+            <img
+              src="/src/assets/images/artemas_logo.png"
+              alt="Artemas"
+              class="w-full max-w-[120px] h-auto scroll-reveal-logo"
+            />
+            <img
+              src="/src/assets/images/the_midnight_logo.png"
+              alt="The Midnight"
+              class="w-full max-w-[120px] h-auto scroll-reveal-logo"
+            />
+          </div>
 
           <p class="text-sm md:text-[20px] text-gray-400 italic font-heading">
-            *Note that number of songs vary per Nintendo game: base game has 40 songs, Deluxe Edition has 54 songs, Ultimate Edition has 64 songs.
+            *Note that number of songs vary per Nintendo game: base game has 40
+            songs, Deluxe Edition has 54 songs, Ultimate Edition has 64 songs.
           </p>
         </div>
       </section>
 
       <!-- Pre-Footer Image -->
       <section class="container-fluid scroll-reveal">
-          <img 
-            src="/src/assets/images/pre_footer.jpg" 
-            alt="Synth Riders Gameplay" 
-            class="w-full"
-            loading="lazy"
-          />
+        <img
+          src="/src/assets/images/pre_footer.jpg"
+          alt="Synth Riders Gameplay"
+          class="w-full"
+          loading="lazy"
+        />
       </section>
-
     </main>
 
     <!-- Footer -->
     <footer class="bg-black py-5">
       <div class="container mx-auto max-w-4xl px-6">
-        
         <!-- Social Icons -->
         <div class="flex justify-center gap-6 mb-8">
-          <a href="#" target="_blank" rel="noopener noreferrer" class="hover:opacity-70 transition-opacity" data-social-link="facebook">
-            <img src="/src/assets/icons/facebook_icon.svg" alt="Facebook" class="w-8 h-8" />
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:opacity-70 transition-opacity"
+            data-social-link="facebook"
+          >
+            <img
+              src="/src/assets/icons/facebook_icon.svg"
+              alt="Facebook"
+              class="w-8 h-8"
+            />
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer" class="hover:opacity-70 transition-opacity" data-social-link="instagram">
-            <img src="/src/assets/icons/instagram_icon.svg" alt="Instagram" class="w-8 h-8" />
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:opacity-70 transition-opacity"
+            data-social-link="instagram"
+          >
+            <img
+              src="/src/assets/icons/instagram_icon.svg"
+              alt="Instagram"
+              class="w-8 h-8"
+            />
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer" class="hover:opacity-70 transition-opacity" data-social-link="twitter">
-            <img src="/src/assets/icons/twitter_icon.svg" alt="Twitter" class="w-8 h-8" />
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:opacity-70 transition-opacity"
+            data-social-link="twitter"
+          >
+            <img
+              src="/src/assets/icons/twitter_icon.svg"
+              alt="Twitter"
+              class="w-8 h-8"
+            />
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer" class="hover:opacity-70 transition-opacity" data-social-link="youtube">
-            <img src="/src/assets/icons/youtube_icon.svg" alt="YouTube" class="w-8 h-8" />
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:opacity-70 transition-opacity"
+            data-social-link="youtube"
+          >
+            <img
+              src="/src/assets/icons/youtube_icon.svg"
+              alt="YouTube"
+              class="w-8 h-8"
+            />
           </a>
-          <a href="#" target="_blank" rel="noopener noreferrer" class="hover:opacity-70 transition-opacity" data-social-link="spotify">
-            <img src="/src/assets/icons/spotify_icon.svg" alt="Spotify" class="w-8 h-8" />
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:opacity-70 transition-opacity"
+            data-social-link="spotify"
+          >
+            <img
+              src="/src/assets/icons/spotify_icon.svg"
+              alt="Spotify"
+              class="w-8 h-8"
+            />
           </a>
         </div>
 
         <!-- Legal Links -->
-        <div class="flex flex-wrap justify-center gap-4 text-lg md:text-[20px] text-gray-400 mb-6 font-heading">
-          <a href="#" class="hover:text-synth-pink transition-colors" data-legal-link="privacy">Privacy Policy</a>
+        <div
+          class="flex flex-wrap justify-center gap-4 text-lg md:text-[20px] text-gray-400 mb-6 font-heading"
+        >
+          <a
+            href="#"
+            class="hover:text-synth-pink transition-colors"
+            data-legal-link="privacy"
+            >Privacy Policy</a
+          >
           <span class="text-gray-600">|</span>
-          <a href="#" class="hover:text-synth-pink transition-colors" data-legal-link="conduct">Code of Conduct</a>
+          <a
+            href="#"
+            class="hover:text-synth-pink transition-colors"
+            data-legal-link="conduct"
+            >Code of Conduct</a
+          >
           <span class="text-gray-600">|</span>
-          <a href="#" class="hover:text-synth-pink transition-colors" data-legal-link="eula">End User License Agreement</a>
+          <a
+            href="#"
+            class="hover:text-synth-pink transition-colors"
+            data-legal-link="eula"
+            >End User License Agreement</a
+          >
           <span class="text-gray-600">|</span>
-          <a href="#" class="hover:text-synth-pink transition-colors" data-legal-link="health">Health and Safety Warning</a>
+          <a
+            href="#"
+            class="hover:text-synth-pink transition-colors"
+            data-legal-link="health"
+            >Health and Safety Warning</a
+          >
           <span class="text-gray-600 hidden lg:block">|</span>
-          <a href="#" class="hover:text-synth-pink transition-colors" data-legal-link="terms">Terms & Conditions</a>
+          <a
+            href="#"
+            class="hover:text-synth-pink transition-colors"
+            data-legal-link="terms"
+            >Terms & Conditions</a
+          >
         </div>
 
         <!-- Kluge Logo -->
         <div class="flex justify-center">
-          <div class="flex justify-center">
-            <p class="text-base md:text-[20px] text-gray-400 mb-2 font-heading mr-4">A game by</p>
-            <img src="/src/assets/images/kuge_logo.svg" alt="Kluge" class="h-8 w-auto mx-auto" />
+          <div class="flex justify-center items-center">
+            <p class="text-base md:text-[20px] text-gray-400 font-heading mr-4">
+              A game by
+            </p>
+            <a
+              class="fill-white hover:fill-synth-pink transition-colors"
+              href="https://klugeinteractive.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <svg width="120" height="78" viewbox="0 0 120 78">
+                <g>
+                  <path
+                    class="st0"
+                    d="M118.4,40.9c-0.2,0.2-0.4,0.3-0.5,0.5c-0.2,0.3-0.2,0.6-0.3,0.9c-1.9,4.5-5.3,7.4-9.6,9.3
+                        c-0.9,0.4-1.9,0.4-2.8,0.4c-2.6-0.1-4.6-2-4.7-4.4c0-0.6,0.2-0.9,0.8-1c4.1-0.9,7.6-3,10.3-6.2c0.8-1,1.5-2,1.9-3.3
+                        c0.6-2.2-0.2-3.7-2.3-4.4c-2-0.7-3.9-0.5-5.8,0.3c-3.5,1.5-6.1,4-8,7.3c-1.4,2.5-3,4.9-4.6,7.2c-0.2,0.3-0.6,0.6-1,0.7
+                        c-0.6,0.2-1.1-0.1-1.1-0.7c0-0.5,0.1-1.1,0.3-1.6c0.5-1.4,1.1-2.8,1.7-4.2c1.1-2.8,2.3-5.6,4.2-7.9c0.4-0.5,0.7-1,0.9-1.6
+                        c0.5-1.4,0.1-2.4-1.3-2.9c-0.3-0.1-0.5-0.2-0.8-0.2c-1.9-0.4-3.9-0.3-5.8,0.1c-3.9,0.7-7.2,2.5-10.3,4.8c-0.8,0.6-1.5,1.3-2.3,1.9
+                        c-1.6-1.1-2.8-2.4-3.1-4.4c-0.2-1.2,0.2-1.7,1.5-1.6c0.6,0,0.8-0.2,0.7-0.7c-0.1-0.3-0.3-0.7-0.5-1c-0.7-0.7-2.2-0.7-3.2-0.1
+                        c-0.9,0.5-1.2,1.4-0.9,2.5c0.6,2.5,2,4.4,4,5.8c0.2,0.1,0.3,0.2,0.5,0.4c-0.5,0.7-1,1.3-1.5,2c-1.5,2-2.7,4.1-3.2,6.6
+                        c-0.2,0.9-0.1,1.8-0.4,2.6c-0.6,1.5-1.6,2.7-2.9,3.6c-0.7,0.5-1.5,0.3-1.7-0.5c-0.2-0.6-0.4-1.4-0.2-2c0.4-1.6,0.9-3.1,1.4-4.7
+                        c0.7-1.9,1.5-3.7,2.2-5.5c-0.7-0.2-1.5-0.8-2.5-1.7c-1-1-1.3-0.9-1.8,0.5c-1.1,3.5-2.6,6.8-4.8,9.7c-0.7,0.9-1.4,1.8-2.6,2.2
+                        c-0.5,0.2-1.1,0.3-1.5,0.1c-0.6-0.3-0.6-1-0.5-1.5c0.2-1,0.4-1.9,0.8-2.8c0.8-1.8,1.8-3.6,2.6-5.5c0.5-1.2,1.1-2.5,1.5-3.7
+                        c0.6-2.1-0.6-3.6-2.8-3.6c-1,0-1.8,0.2-2.6,0.8c-1,0.8-2,1.5-2.8,2.5c-2.2,2.5-4.2,5.1-6.3,7.7c-1.3,1.6-2.4,3.4-3.6,5
+                        c-0.5,0.6-1.1,1.2-1.8,1.5c-1.4,0.8-2.7,0.4-3.4-1.1c-0.2-0.4-0.3-0.8-0.4-1.2c-0.5-1.9-0.5-3.8-0.4-5.7c0-0.4,0.2-0.6,0.5-0.8
+                        c1.7-1,3.3-1.9,4.9-3c5.4-3.5,10.5-7.5,14.9-12.4c2.5-2.9,4.7-6,5.9-9.6c0.8-2.4,1-4.9,0.5-7.4c-0.5-1.9-1.8-2.8-3.8-2.7
+                        c-1.4,0.1-2.7,0.4-3.8,1.1c-1.4,1-2.8,1.9-4,3.1c-5.5,4.9-10,10.6-13.9,16.8c-2.5,3.9-4.7,8-5.9,12.5c0,0.2-0.3,0.4-0.5,0.4
+                        c-1.6,0.2-3,0-4.1-1.3c-0.2-0.2-0.4-0.4-0.6-0.5c-0.7-0.4-1.5-0.2-1.9,0.5c-0.4,0.6-0.2,1.4,0.5,1.8c0.3,0.2,0.6,0.3,0.9,0.4
+                        c0.8,0.2,1.5,0.4,2.3,0.5c1,0.2,2,0.3,3.1,0.4c0,1.5-0.1,3.1,0,4.5c0.3,2.8,1.5,5.1,3.7,6.9c0.9,0.7,2,0.9,3,0.5
+                        c0.7-0.3,1.5-0.7,2.1-1.2c1-0.9,2-1.8,2.8-2.8c1.9-2.5,3.8-5.1,5.6-7.7c1-1.3,1.9-2.7,3-4c0.5-0.6,1.2-1.1,1.8-1.6
+                        c0.7-0.5,1.2-0.1,1.2,0.7c0,0.2,0,0.4-0.1,0.6c-0.4,1.1-0.7,2.3-1.2,3.3c-0.9,2-1.7,4-2.1,6.2c-0.3,1.5-0.4,3,0.1,4.5
+                        c0.4,1.2,1.1,1.9,2.4,2.1c1.9,0.3,3.5-0.3,4.8-1.6c0.9-0.9,1.7-2.1,2.5-3.1c0.2-0.2,0.4-0.5,0.6-0.7c0,0.4,0,0.8-0.1,1.2
+                        c-0.4,2.7,1.2,4.5,3.9,4.3c1.8-0.2,3.3-0.9,4.5-2.2c0.3-0.3,0.6-0.7,0.9-1.1c0.8,1.9,2.2,2.8,4,3.2c1.5,0.3,2.9-0.1,4.2-0.9
+                        c2.1-1.3,3.8-3,5.4-4.9c0.2-0.2,0.3-0.3,0.5-0.5c0,0,0.1,0,0.1,0.1c-1.6,3.2-3.2,6.4-4.8,9.7c-0.2-0.1-0.4-0.1-0.6-0.2
+                        c-6.4-1.8-12.9-2.8-19.5-2.8c-2.8,0-5.7,0.2-8.4,1c-2.8,0.8-5.4,1.9-7.5,4c-1.5,1.5-2.4,3.3-2.2,5.4c0.1,2,1.1,3.6,2.5,5.1
+                        c1.9,2,4.2,3.4,6.7,4.3c4.7,1.7,9.5,1.9,14.4,1.1c4-0.7,7.6-2.2,10.5-5.1c3-2.9,5.4-6.1,7.5-9.7c0.2-0.3,0.4-0.5,0.8-0.4
+                        c5.7,1.8,11.3,3.9,16.5,7c0.2,0.1,0.4,0.2,0.7,0.3c0.1,0,0.3,0,0.4-0.1c0.1-0.1,0-0.3-0.1-0.4c-0.1-0.2-0.3-0.3-0.4-0.4
+                        c-1.1-0.7-2.2-1.5-3.4-2.2c-4.1-2.2-8.4-3.8-12.8-5.5c-0.2-0.1-0.4-0.2-0.7-0.3c1.4-2.9,2.7-5.7,4.1-8.5c0.6,1.4,1.4,1.9,2.8,1.6
+                        c1.3-0.3,2.3-0.8,3.3-1.7c0.4-0.4,0.8-0.7,1.1-1.1c0.1,0.1,0.1,0.1,0.1,0.1c0.1,0.2,0.2,0.5,0.3,0.7c0.9,2.3,2.4,3.9,4.8,4.5
+                        c1.4,0.4,2.8,0.4,4.2,0.1c6.2-1.5,10.3-5.2,12.5-11.2c0.2-0.5,0.3-1,0.3-1.5C118.7,41.3,118.5,41.1,118.4,40.9L118.4,40.9z
+                        M37.3,38.7c3.1-7.5,6.7-14.7,11.4-21.4c2.1-2.9,4.4-5.7,7.2-7.9c0.8-0.6,1.7-1.1,2.7-1.3c1.8-0.4,3.3,0.7,3.4,2.6
+                        c0.2,2.4-0.4,4.8-1.4,7c-1.6,3.6-4.1,6.6-6.8,9.4c-4.4,4.4-9.4,8.2-14.8,11.3c-0.6,0.3-1.2,0.6-1.9,1C37.2,39,37.2,38.8,37.3,38.7
+                        L37.3,38.7z M79.6,60.1c-1.7,2.6-3.2,5.3-5,7.7c-5,6.5-14.1,8.4-21.2,4.4c-2.4-1.3-4.2-3.2-4.9-5.9c-0.8-3.1,0.5-6.1,3.2-7.7
+                        c1.9-1.1,4-1.6,6.1-1.8c5-0.6,10-0.1,15,0.6c2.2,0.3,4.4,0.8,6.6,1.2c0.2,0,0.5,0.1,0.8,0.2C80,59.3,79.9,59.7,79.6,60.1L79.6,60.1
+                        z M84.1,47.5c-1.5,1.7-3.4,2.9-5.7,3.3c-2.2,0.4-3.5-0.7-3.5-2.9c0-2.9,1.1-5.4,2.4-7.9c0.6-1.2,1.2-1.9,2.9-1.6
+                        c2.9,0.6,5.8-0.2,8.6-1.1c0.2-0.1,0.5-0.2,0.9-0.3C88.1,40.8,86.7,44.5,84.1,47.5L84.1,47.5z M84.7,37.3c-1.4,0.2-2.9,0.1-4.4,0.2
+                        c-0.3,0-0.6-0.2-1.1-0.3c0.5-0.6,0.9-1.2,1.4-1.6c2.7-2.8,6-4.5,9.7-5.2c0.7-0.1,1.5-0.1,2.2,0.1c1.2,0.3,1.8,1.4,1.1,2.5
+                        c-0.4,0.7-1,1.3-1.7,1.8C89.7,36.3,87.3,37,84.7,37.3z M101.4,39.7c0.9-1.9,2.4-3.3,4.4-4c1.3-0.5,2.5-0.3,3.5,0.7
+                        c0.8,0.8,1,1.8,0.5,2.8c-0.3,0.7-0.8,1.4-1.4,2c-2.2,2.2-4.9,3.6-8.1,4.2C100.2,43.4,100.5,41.5,101.4,39.7L101.4,39.7z"
+                  />
+                  <path
+                    class="st0"
+                    d="M14.4,37.1c0.2-0.1,0.4-0.3,0.5-0.4c2.6-2,5.2-4,7.8-5.9c1.5-1.1,3.1-1.2,4.9-0.8c0.9,0.2,1.6,0.7,1.8,1.7
+                        c0.2,1.1-0.1,2.1-0.9,2.8c-0.6,0.5-1.3,0.4-1.9,0.1c-0.6-0.3-1.2-0.7-1.2-1.6c0-0.6-0.3-1-0.9-1c-0.6,0-1.2,0.1-1.8,0.3
+                        c-2,1-3.8,2.3-5.5,3.8c-2.1,1.9-3.1,4.1-2.4,7c0.6,2.3,1.3,4.6,2.6,6.6c1.9,2.8,4.5,4.5,7.6,5.6c4.3,1.5,8.7,1.7,13.1,0.4
+                        c2.4-0.7,4.5-1.7,5.9-4c0.4,0.5,0.3,0.9,0.1,1.3c-0.4,0.6-0.8,1.2-1.2,1.7c-2,2.1-4.6,3.2-7.3,3.8c-6.6,1.3-12.8,0.4-18.3-3.5
+                        c-3.3-2.3-5.4-5.6-6.1-9.6c-0.1-0.4-0.1-0.8-0.3-1.3c-0.1,0.2-0.2,0.4-0.4,0.6c-1.5,3-3,6.1-4.5,9.2c-0.2,0.5-0.5,0.8-1.1,0.8
+                        c-1,0-1.9,0.1-2.9-0.1c-1.2-0.2-1.8-1.2-1.5-2.4c0.1-0.7,0.3-1.3,0.6-1.9c4.9-9.9,10-19.6,16.1-28.8c2.2-3.4,4.6-6.7,7.5-9.6
+                        c3.3-3.3,6.7-6.4,10.9-8.6c3.3-1.7,6.8-2.7,10.5-2.7c1,0,2,0.2,2.9,0.4c0.2,0,0.4,0.1,0.6,0.3c0.1,0.1,0.2,0.3,0.2,0.4
+                        c0,0.1-0.2,0.1-0.4,0.2c-0.1,0-0.2,0-0.3,0c-3.1-0.5-6.1,0.5-9,1.4c-3.9,1.2-6.8,3.7-9.4,6.8c-3.5,4.1-6.4,8.6-9.1,13.2
+                        c-2.4,4.2-4.5,8.5-6.7,12.7c-0.2,0.4-0.4,0.9-0.7,1.3C14.3,37.1,14.4,37.1,14.4,37.1L14.4,37.1z"
+                  />
+                </g>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
@@ -353,6 +662,5 @@
 
     <!-- Scripts -->
     <script type="module" src="/src/scripts/main.js"></script>
-
   </body>
 </html>
