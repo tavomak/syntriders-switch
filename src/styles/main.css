@@ -216,6 +216,29 @@
     animation: glow-pulse 2s ease-in-out infinite;
   }
 
+  /* Scroll reveal animations - only hide when JS is enabled */
+  .js-enabled .scroll-reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .js-enabled .scroll-reveal.revealed {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .js-enabled .scroll-reveal-logo {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .js-enabled .scroll-reveal-logo.revealed {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
   /* Animation delays */
   .animation-delay-300 {
     animation-delay: 0.3s;
