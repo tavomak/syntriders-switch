@@ -32,8 +32,10 @@ export const initScrollReveal = () => {
       if (entry.isIntersecting) {
         const element = entry.target;
         
-        // Add revealed class to trigger animation
-        element.classList.add('revealed');
+        // Add small delay before starting animation
+        setTimeout(() => {
+          element.classList.add('revealed');
+        }, 200); // 200ms delay
         
         // Stop observing this element once revealed
         observer.unobserve(element);
@@ -73,12 +75,14 @@ const initArtistLogosReveal = () => {
         // Find all logo images within this container
         const logos = logoContainer.querySelectorAll('.scroll-reveal-logo');
         
-        // Reveal logos one by one with staggered delays
-        logos.forEach((logo, index) => {
-          setTimeout(() => {
-            logo.classList.add('revealed');
-          }, index * 150); // 150ms delay between each logo
-        });
+        // Add initial delay, then reveal logos one by one with staggered delays
+        setTimeout(() => {
+          logos.forEach((logo, index) => {
+            setTimeout(() => {
+              logo.classList.add('revealed');
+            }, index * 150); // 150ms delay between each logo
+          });
+        }, 300); // 300ms initial delay before starting the sequence
 
         // Stop observing once animation starts
         logoObserver.unobserve(logoContainer);
