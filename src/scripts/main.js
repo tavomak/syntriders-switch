@@ -4,6 +4,7 @@
  */
 
 import { initNavigation } from './modules/navigation.js';
+import { initHero } from './modules/hero-animations.js';
 import { SOCIAL_LINKS, LEGAL_LINKS } from './constants.js';
 
 /**
@@ -37,6 +38,9 @@ const init = () => {
 
   // Populate all links from constants
   populateLinks();
+
+  // Initialize hero animations and interactions
+  initHero();
 
   // Initialize navigation (mobile menu, smooth scrolling)
   initNavigation();
