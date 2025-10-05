@@ -73,6 +73,16 @@
   --z-100: 100;
 }
 
+/* Gradient border utility for social buttons */
+.border-gradient-pink-purple {
+  border: 2px solid transparent;
+  background-image: 
+    linear-gradient(black, black),
+    linear-gradient(to right, #FE1E69, #924CD8);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
 /* Custom base styles */
 @layer base {
   html {
