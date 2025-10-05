@@ -1,6 +1,6 @@
-# Marketing Landing Page
+# Synth Riders for Nintendo Switch - AI-Developed Static Site
 
-> A high-performance, SEO-optimized static landing page built with Vite, Tailwind CSS 4, and vanilla JavaScript.
+> A high-performance, SEO-optimized promotional landing page for Synth Riders Nintendo Switch release, built with Vite, Tailwind CSS 4, and vanilla JavaScript by AI agents.
 
 ---
 

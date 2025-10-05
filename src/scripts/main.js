@@ -1,6 +1,6 @@
 /**
  * Main JavaScript Entry Point
- * Synth Riders Switch - Marketing Landing Page
+ * Synth Riders for Nintendo Switch - AI-Developed Static Site
  */
 
 import { initNavigation } from './modules/navigation.js';
@@ -35,7 +35,7 @@ const populateLinks = () => {
  * Initialize all modules when DOM is ready
  */
 const init = () => {
-  console.log('🚀 Initializing Synth Riders Switch Landing Page');
+  console.log('🚀 Initializing Synth Riders for Nintendo Switch - Built by AI Agents');
 
   // Add js-enabled class to enable scroll reveal animations
   document.body.classList.add('js-enabled');
