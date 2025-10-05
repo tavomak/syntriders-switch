@@ -5,6 +5,7 @@
 
 import { initNavigation } from './modules/navigation.js';
 import { initHero } from './modules/hero-animations.js';
+import { initScrollReveal } from './modules/scroll-reveal.js';
 import { SOCIAL_LINKS, LEGAL_LINKS } from './constants.js';
 
 /**
@@ -36,11 +37,17 @@ const populateLinks = () => {
 const init = () => {
   console.log('🚀 Initializing Synth Riders Switch Landing Page');
 
+  // Add js-enabled class to enable scroll reveal animations
+  document.body.classList.add('js-enabled');
+
   // Populate all links from constants
   populateLinks();
 
   // Initialize hero animations and interactions
   initHero();
+
+  // Initialize scroll reveal animations
+  initScrollReveal();
 
   // Initialize navigation (mobile menu, smooth scrolling)
   initNavigation();
