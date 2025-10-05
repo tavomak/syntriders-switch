@@ -71,11 +71,8 @@
           loading="eager"
         />
         
-        <!-- Dark overlay for better contrast -->
-        <div class="absolute inset-0 bg-black/30"></div>
-        
-        <!-- Bottom gradient overlay to blend with black background -->
-        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/80"></div>
+        <!-- Improved gradient overlay: transparent top 50%, smooth transition to black bottom -->
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent from-50% to-black"></div>
         
         <!-- Floating Logo at Top -->
         <div class="absolute top-6 left-0 right-0 z-20 flex justify-center motion-safe:animate-fade-in">
