@@ -488,7 +488,18 @@ export default defineConfig({
 
 ## 📝 Future TODOs
 
-### Phase 10: Contact Page Implementation
+### Phase 10: Development Workflow Improvements
+**Status**: 📝 TODO (Later)  
+**Priority**: Medium
+
+- [ ] **Create MCP config for GitHub PR creation**
+  - Research available GitHub MCP tools/configurations
+  - Set up GitHub CLI (gh) integration for automated PR creation
+  - Configure MCP to handle PR creation with proper titles and descriptions
+  - Test automated workflow: branch → commit → push → create PR
+  - Document the setup process for other developers
+
+### Phase 11: Contact Page Implementation
 **Status**: 📝 TODO (Later)  
 **Dependencies**: Backend API endpoint ready
 
@@ -501,7 +512,7 @@ export default defineConfig({
 - [ ] Update navigation links
 - [ ] Add to sitemap.xml
 
-### Phase 11: Analytics Integration
+### Phase 12: Analytics Integration
 **Status**: 📝 TODO (Later)  
 **Dependencies**: GA4 tracking ID provided
 
@@ -514,7 +525,7 @@ export default defineConfig({
 - [ ] Test in Google Analytics debug mode
 - [ ] Document tracked events
 
-### Phase 12: Content & Design Customization
+### Phase 13: Content & Design Customization
 **Status**: 📝 TODO (Later)
 
 - [ ] Replace placeholder content with actual copy
@@ -526,7 +537,7 @@ export default defineConfig({
 - [ ] Update favicon and og:image
 - [ ] Create 404 error page
 
-### Phase 13: Advanced Optimizations
+### Phase 14: Advanced Optimizations
 **Status**: 📝 TODO (Later)
 
 - [ ] Implement critical CSS inlining
@@ -537,7 +548,7 @@ export default defineConfig({
 - [ ] Add structured data (JSON-LD)
 - [ ] Set up monitoring (Sentry, LogRocket)
 
-### Phase 14: Deployment Preparation
+### Phase 15: Deployment Preparation
 **Status**: 📝 TODO (Later)  
 **Dependencies**: Infrastructure team ready
 
