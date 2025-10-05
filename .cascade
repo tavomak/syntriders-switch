@@ -1,0 +1,20 @@
+{
+  "name": "Synth Riders Switch Landing Page",
+  "type": "static-website",
+  "framework": "vanilla-js",
+  "styling": "tailwind-css-4",
+  "buildTool": "vite",
+  "primaryDocs": [
+    ".ai/active-context.md",
+    ".ai/ai-instructions.md",
+    ".ai/coding-standards.md",
+    "WARP.md"
+  ],
+  "rules": {
+    "noFrameworks": true,
+    "noRawCSS": true,
+    "mobileFirst": true,
+    "absolutePaths": true,
+    "accessibility": "required"
+  }
+}
