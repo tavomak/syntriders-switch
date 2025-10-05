@@ -63,11 +63,19 @@
         role="banner"
         aria-label="Synth Riders Overdrive hero section"
       >
-        <!-- Hero Image -->
+        <!-- Hero Image - Responsive -->
+        <!-- Mobile Image -->
         <img 
-          src="/src/assets/images/primary_banner.png" 
+          src="/src/assets/images/primary_banner_mobile.png" 
           alt="Synth Riders on Nintendo Switch" 
-          class="w-full h-auto block"
+          class="w-full h-auto block md:hidden"
+          loading="eager"
+        />
+        <!-- Desktop Image -->
+        <img 
+          src="/src/assets/images/primary_banner.jpg" 
+          alt="Synth Riders on Nintendo Switch" 
+          class="w-full h-auto hidden md:block"
           loading="eager"
         />
         
@@ -85,10 +93,10 @@
           />
         </div>
 
-        <!-- Floating Social Action Buttons at Bottom -->
-        <div class="absolute bottom-6 left-0 right-0 z-20">
-          <div class="container mx-auto max-w-4xl py-5">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 px-6 motion-safe:animate-fade-in-up motion-safe:animation-delay-300">
+        <!-- Floating Social Action Buttons at Bottom (Desktop Only) -->
+        <div class="hidden md:block absolute bottom-6 left-0 right-0 z-20">
+          <div class="container mx-auto max-w-4xl py-10">
+            <div class="grid grid-cols-4 gap-8 px-6 motion-safe:animate-fade-in-up motion-safe:animation-delay-300">
             <!-- Discord Button -->
             <a 
               href="#" 
@@ -99,7 +107,7 @@
               aria-label="Join our Discord community"
             >
               <img src="/src/assets/icons/discord_icon.svg" alt="" class="w-6 h-6 flex-shrink-0 group-hover:scale-110 transition-transform duration-200" />
-              <span class="text-base sm:text-lg uppercase tracking-wide font-bold leading-tight text-left font-heading">
+              <span class="text-sm md:text-lg uppercase tracking-wide font-bold leading-tight text-left font-heading">
                 JOIN<br/>THE DISCORD
               </span>
             </a>
@@ -114,7 +122,7 @@
               aria-label="Download press kit"
             >
               <img src="/src/assets/icons/press_kit_icon.svg" alt="" class="w-6 h-6 flex-shrink-0 group-hover:scale-110 transition-transform duration-200" />
-              <span class="text-base sm:text-lg uppercase tracking-wide font-bold text-left font-heading">
+              <span class="text-sm md:text-lg uppercase tracking-wide font-bold text-left font-heading">
                 PRESS KIT
               </span>
             </a>
@@ -129,7 +137,7 @@
               aria-label="Follow us on TikTok"
             >
               <img src="/src/assets/icons/tiktok_icon.svg" alt="" class="w-6 h-6 flex-shrink-0 group-hover:scale-110 transition-transform duration-200" />
-              <span class="text-base sm:text-lg uppercase tracking-wide font-bold text-left font-heading">
+              <span class="text-sm md:text-lg uppercase tracking-wide font-bold text-left font-heading">
                 TIKTOK
               </span>
             </a>
@@ -144,12 +152,77 @@
               aria-label="Subscribe to our YouTube channel"
             >
               <img src="/src/assets/icons/youtube_icon.svg" alt="" class="w-6 h-6 flex-shrink-0 group-hover:scale-110 transition-transform duration-200" />
-              <span class="text-base sm:text-lg uppercase tracking-wide font-bold text-left font-heading">
+              <span class="text-sm md:text-lg uppercase tracking-wide font-bold text-left font-heading">
                 YOUTUBE
               </span>
             </a>
             </div>
           </div>
+        </div>
+      </section>
+
+      <!-- Mobile Social Action Buttons (Under Hero Image) -->
+      <section class="md:hidden container mx-auto max-w-4xl pb-10">
+        <div class="grid grid-cols-2 gap-4 px-2 motion-safe:animate-fade-in-up motion-safe:animation-delay-300">
+          <!-- Discord Button -->
+          <a 
+            href="#" 
+            target="_blank"
+            rel="noopener noreferrer"
+            class="group flex items-center gap-3 bg-black/80 hover:bg-[#5865F2] backdrop-blur-sm text-white font-semibold py-4 px-6 rounded-xl transition-all duration-300 border-2 border-synth-pink/80 hover:border-[#5865F2] hover:scale-105 hover:shadow-[0_0_20px_rgba(88,101,242,0.5)] motion-safe:animate-fade-in-up motion-safe:animation-delay-500 h-20 min-h-20"
+            data-social-link="discord"
+            aria-label="Join our Discord community"
+          >
+            <img src="/src/assets/icons/discord_icon.svg" alt="" class="w-6 h-6 flex-shrink-0 group-hover:scale-110 transition-transform duration-200" />
+            <span class="text-sm uppercase tracking-wide font-bold leading-tight text-left font-heading">
+              JOIN<br/>THE DISCORD
+            </span>
+          </a>
+
+          <!-- Press Kit Button -->
+          <a 
+            href="#" 
+            target="_blank"
+            rel="noopener noreferrer"
+            class="group flex items-center gap-3 bg-black/80 hover:bg-synth-pink backdrop-blur-sm text-white font-semibold py-4 px-6 rounded-xl transition-all duration-300 border-2 border-synth-pink/80 hover:border-synth-pink hover:scale-105 hover:shadow-[0_0_20px_rgba(254,30,105,0.5)] motion-safe:animate-fade-in-up motion-safe:animation-delay-600 h-20 min-h-20"
+            data-social-link="presskit"
+            aria-label="Download press kit"
+          >
+            <img src="/src/assets/icons/press_kit_icon.svg" alt="" class="w-6 h-6 flex-shrink-0 group-hover:scale-110 transition-transform duration-200" />
+            <span class="text-base sm:text-lg uppercase tracking-wide font-bold text-left font-heading">
+              PRESS KIT
+            </span>
+          </a>
+
+          <!-- TikTok Button -->
+          <a 
+            href="#" 
+            target="_blank"
+            rel="noopener noreferrer"
+            class="group flex items-center gap-3 bg-black/80 hover:bg-black backdrop-blur-sm text-white font-semibold py-4 px-6 rounded-xl transition-all duration-300 border-2 border-synth-pink/80 hover:border-white hover:scale-105 hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] motion-safe:animate-fade-in-up motion-safe:animation-delay-700 h-20 min-h-20"
+            data-social-link="tiktok"
+            aria-label="Follow us on TikTok"
+          >
+            <img src="/src/assets/icons/tiktok_icon.svg" alt="" class="w-6 h-6 flex-shrink-0 group-hover:scale-110 transition-transform duration-200" />
+            <span class="text-base sm:text-lg uppercase tracking-wide font-bold text-left font-heading">
+              TIKTOK
+            </span>
+          </a>
+
+          <!-- YouTube Button -->
+          <a 
+            href="#" 
+            target="_blank"
+            rel="noopener noreferrer"
+            class="group flex items-center gap-3 bg-black/80 hover:bg-[#FF0000] backdrop-blur-sm text-white font-semibold py-4 px-6 rounded-xl transition-all duration-300 border-2 border-synth-pink/80 hover:border-[#FF0000] hover:scale-105 hover:shadow-[0_0_20px_rgba(255,0,0,0.5)] motion-safe:animate-fade-in-up motion-safe:animation-delay-800 h-20 min-h-20"
+            data-social-link="youtube"
+            aria-label="Subscribe to our YouTube channel"
+          >
+            <img src="/src/assets/icons/youtube_icon.svg" alt="" class="w-6 h-6 flex-shrink-0 group-hover:scale-110 transition-transform duration-200" />
+            <span class="text-base sm:text-lg uppercase tracking-wide font-bold text-left font-heading">
+              YOUTUBE
+            </span>
+          </a>
         </div>
       </section>
 
@@ -256,7 +329,7 @@
         </div>
 
         <!-- Legal Links -->
-        <div class="flex flex-wrap justify-center gap-4 text-sm md:text-[20px] text-gray-400 mb-6 font-heading">
+        <div class="flex flex-wrap justify-center gap-4 text-lg md:text-[20px] text-gray-400 mb-6 font-heading">
           <a href="#" class="hover:text-synth-pink transition-colors" data-legal-link="privacy">Privacy Policy</a>
           <span class="text-gray-600">|</span>
           <a href="#" class="hover:text-synth-pink transition-colors" data-legal-link="conduct">Code of Conduct</a>
@@ -264,13 +337,13 @@
           <a href="#" class="hover:text-synth-pink transition-colors" data-legal-link="eula">End User License Agreement</a>
           <span class="text-gray-600">|</span>
           <a href="#" class="hover:text-synth-pink transition-colors" data-legal-link="health">Health and Safety Warning</a>
-          <span class="text-gray-600">|</span>
+          <span class="text-gray-600 hidden lg:block">|</span>
           <a href="#" class="hover:text-synth-pink transition-colors" data-legal-link="terms">Terms & Conditions</a>
         </div>
 
         <!-- Kluge Logo -->
         <div class="flex justify-center">
-          <div class="flex justify-center"">
+          <div class="flex justify-center">
             <p class="text-base md:text-[20px] text-gray-400 mb-2 font-heading mr-4">A game by</p>
             <img src="/src/assets/images/kuge_logo.svg" alt="Kluge" class="h-8 w-auto mx-auto" />
           </div>
