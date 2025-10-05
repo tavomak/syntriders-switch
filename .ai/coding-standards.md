@@ -537,14 +537,32 @@ test: Add navigation module tests
 chore: Update dependencies
 ```
 
-### Branch Naming
+### Branch Naming (CRITICAL)
 
+**ALWAYS work on feature branches, never directly on `main`.** The AI must create a branch automatically before starting any work.
+
+```bash
+# For new features
+git checkout -b feat/mobile-navigation
+git checkout -b feat/form-validation
+git checkout -b feat/analytics-integration
+
+# For bugfixes
+git checkout -b bugfix/asset-404-error
+git checkout -b bugfix/menu-focus-trap
+git checkout -b bugfix/link-population
 ```
-feature/mobile-navigation
-fix/asset-404-error
-docs/coding-standards
-refactor/link-population
-```
+
+**Branch naming pattern**:
+- `feat/[descriptive-feature-name]` - For new functionality
+- `bugfix/[descriptive-bug-name]` - For bug fixes
+
+**Workflow**:
+1. ✅ AI creates branch automatically before starting work
+2. ✅ AI commits all changes to feature branch
+3. ✅ User reviews and merges to `main` manually
+
+**This applies to ALL changes**, including small fixes and tweaks.
 
 ---
 
