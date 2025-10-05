@@ -101,6 +101,24 @@ text-2xl md:text-4xl lg:text-6xl    → Responsive headings
 text-base md:text-lg                 → Body text
 ```
 
+### Hero Animations
+```css
+/* Entrance Effects (NEW) */
+animate-fade-in              → Fade in over 0.8s
+animate-fade-in-up           → Fade in + slide up from 30px
+animate-glow-pulse           → Continuous glow pulsing
+
+/* Animation Delays */
+animation-delay-300          → 0.3s delay
+animation-delay-500          → 0.5s delay  
+animation-delay-600          → 0.6s delay
+animation-delay-700          → 0.7s delay
+animation-delay-800          → 0.8s delay
+
+/* Motion Safety */
+motion-safe:animate-*        → Only animate if user allows motion
+```
+
 ### Spacing
 ```css
 /* Common Patterns */

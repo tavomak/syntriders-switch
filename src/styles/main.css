@@ -53,8 +53,17 @@
     0 10px 40px -15px rgb(0 0 0 / 0.1), 0 20px 25px -5px rgb(0 0 0 / 0.04);
   --shadow-inner-soft: inset 0 2px 4px 0 rgb(0 0 0 / 0.06);
 
-  /* Custom Animations - Simplified for performance */
-  --animate-fade: fade 0.3s ease-in-out;
+  /* Custom Animations - Hero entrance effects */
+  --animate-fade: fade 0.8s ease-out;
+  --animate-fade-in-up: fade-in-up 0.8s ease-out;
+  --animate-glow-pulse: glow-pulse 2s ease-in-out infinite;
+  
+  /* Animation delays for staggered effects */
+  --animation-delay-300: 0.3s;
+  --animation-delay-500: 0.5s;
+  --animation-delay-600: 0.6s;
+  --animation-delay-700: 0.7s;
+  --animation-delay-800: 0.8s;
 
   /* Z-Index Scale */
   --z-60: 60;
@@ -190,15 +199,72 @@
   .scrollbar-none::-webkit-scrollbar {
     display: none;
   }
+
+  /* Animation utilities for hero entrance */
+  .animate-fade-in {
+    animation: fade 0.8s ease-out forwards;
+    opacity: 0;
+  }
+
+  .animate-fade-in-up {
+    animation: fade-in-up 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  .animate-glow-pulse {
+    animation: glow-pulse 2s ease-in-out infinite;
+  }
+
+  /* Animation delays */
+  .animation-delay-300 {
+    animation-delay: 0.3s;
+  }
+
+  .animation-delay-500 {
+    animation-delay: 0.5s;
+  }
+
+  .animation-delay-600 {
+    animation-delay: 0.6s;
+  }
+
+  .animation-delay-700 {
+    animation-delay: 0.7s;
+  }
+
+  .animation-delay-800 {
+    animation-delay: 0.8s;
+  }
 }
 
-/* Animation keyframes - Simplified */
+/* Animation keyframes - Hero entrance effects */
 @keyframes fade {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(254, 30, 105, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(254, 30, 105, 0.6);
   }
 }
 
